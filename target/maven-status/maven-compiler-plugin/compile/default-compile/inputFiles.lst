@@ -1,0 +1,12 @@
+C:\Users\thaina.silva\Documents\thaina\faculdade\join\catalogo\src\main\java\com\example\catalogo\CatalogoApplication.java
+C:\Users\thaina.silva\Documents\thaina\faculdade\join\catalogo\src\main\java\com\example\catalogo\controllers\CategoriaController.java
+C:\Users\thaina.silva\Documents\thaina\faculdade\join\catalogo\src\main\java\com\example\catalogo\controllers\ProdutoController.java
+C:\Users\thaina.silva\Documents\thaina\faculdade\join\catalogo\src\main\java\com\example\catalogo\domain\Categoria.java
+C:\Users\thaina.silva\Documents\thaina\faculdade\join\catalogo\src\main\java\com\example\catalogo\domain\dto\CategoriaRequestDTO.java
+C:\Users\thaina.silva\Documents\thaina\faculdade\join\catalogo\src\main\java\com\example\catalogo\domain\dto\ProdutoGetRequestDTO.java
+C:\Users\thaina.silva\Documents\thaina\faculdade\join\catalogo\src\main\java\com\example\catalogo\domain\dto\ProdutoRequestDTO.java
+C:\Users\thaina.silva\Documents\thaina\faculdade\join\catalogo\src\main\java\com\example\catalogo\domain\Produto.java
+C:\Users\thaina.silva\Documents\thaina\faculdade\join\catalogo\src\main\java\com\example\catalogo\repositories\ICategoriaRepository.java
+C:\Users\thaina.silva\Documents\thaina\faculdade\join\catalogo\src\main\java\com\example\catalogo\repositories\IProdutoRepository.java
+C:\Users\thaina.silva\Documents\thaina\faculdade\join\catalogo\src\main\java\com\example\catalogo\services\CategoriaService.java
+C:\Users\thaina.silva\Documents\thaina\faculdade\join\catalogo\src\main\java\com\example\catalogo\services\ProdutoService.java

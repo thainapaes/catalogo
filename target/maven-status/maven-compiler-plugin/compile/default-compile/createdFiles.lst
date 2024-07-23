@@ -1,0 +1,12 @@
+com\example\catalogo\services\ProdutoService.class
+com\example\catalogo\domain\dto\ProdutoRequestDTO.class
+com\example\catalogo\domain\dto\ProdutoGetRequestDTO.class
+com\example\catalogo\controllers\CategoriaController.class
+com\example\catalogo\CatalogoApplication.class
+com\example\catalogo\services\CategoriaService.class
+com\example\catalogo\domain\Categoria.class
+com\example\catalogo\domain\Produto.class
+com\example\catalogo\repositories\IProdutoRepository.class
+com\example\catalogo\domain\dto\CategoriaRequestDTO.class
+com\example\catalogo\controllers\ProdutoController.class
+com\example\catalogo\repositories\ICategoriaRepository.class
