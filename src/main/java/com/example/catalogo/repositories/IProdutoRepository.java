@@ -14,6 +14,4 @@ public interface IProdutoRepository extends JpaRepository<Produto, Long> {
 
     Optional<Produto> findByProdNome(String prodNome);
 
-   // @Query("SELECT p FROM produto p WHERE p.disponivel = 'S'")
-    //Page<Produto> findProdutosDisponiveis(Pageable pageable);
 }
