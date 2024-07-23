@@ -8,6 +8,8 @@ import com.example.catalogo.domain.dto.request.ProdDisponivelResquestDTO;
 import com.example.catalogo.domain.dto.response.CategoriaResponseDTO;
 import com.example.catalogo.domain.dto.response.ProdutoResponseDTO;
 import com.example.catalogo.services.CategoriaService;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -60,8 +62,13 @@ public class CategoriaController {
 
     @CrossOrigin(origins = "*", allowedHeaders = "*")
     @DeleteMapping("/{categoriaId}")
-    public void deleteCategoria(@PathVariable Long categoriaId) {
-        service.deleteCategoria(categoriaId);
+    public ResponseEntity<HttpStatusCode> deleteCategoria(@PathVariable Long categoriaId) {
+        HttpStatus status = service.deleteCategoria(categoriaId);
+        if (status.equals(HttpStatus.OK)) {
+            return ResponseEntity.status(HttpStatus.OK).body(HttpStatusCode.valueOf(200));
+        } else {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(HttpStatusCode.valueOf(404));
+        }
     }
 
 }

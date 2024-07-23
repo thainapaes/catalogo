@@ -16,8 +16,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
+import javax.swing.text.html.Option;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
@@ -149,10 +151,17 @@ public class CategoriaService {
         return mapper.toDto(responseDTO);
     }
 
-    public void deleteCategoria(Long id) {
-        Categoria categoria = categoriaRepository.findById(id)
-                .orElseThrow(() -> new IllegalArgumentException("Categoria não existe"));
-        categoriaRepository.delete(categoria);
+    public HttpStatus deleteCategoria(Long id) {
+        Optional<Categoria> categoria = categoriaRepository.findById(id);
+                //.orElseThrow(() -> new IllegalArgumentException("Categoria não existe"));
+        //categoriaRepository.delete(categoria);
+
+        if(categoria.isEmpty()) {
+            return HttpStatus.NOT_FOUND;
+        } else {
+            categoriaRepository.delete(categoria.get());
+            return HttpStatus.OK;
+        }
     }
 
     public CategoriaResponseDTO desvincularProd(DesvincularProdutoRequestDTO dto){
